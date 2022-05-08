@@ -30,6 +30,7 @@ import {AppTimelineDemoComponent} from './pages/app.timelinedemo.component';
 import {AppInvoiceComponent} from './pages/app.invoice.component';
 import {AppHelpComponent} from './pages/app.help.component';
 import {BlocksComponent} from './blocks/blocks/blocks.component';
+import {CustomDashboardComponent} from './bdv-custom/component/custom-dashboard/custom-dashboard.component';
 
 @NgModule({
     imports: [
@@ -37,7 +38,8 @@ import {BlocksComponent} from './blocks/blocks/blocks.component';
             {
                 path: '', component: AppMainComponent,
                 children: [
-                    {path: '', component: DashboardDemoComponent},
+                    {path: '', component: CustomDashboardComponent},
+                    {path: 'defaultDashBoard', component: DashboardDemoComponent},
                     {path: 'uikit/formlayout', component: FormLayoutDemoComponent},
                     {path: 'uikit/floatlabel', component: FloatLabelDemoComponent},
                     {path: 'uikit/invalidstate', component: InvalidStateDemoComponent},
